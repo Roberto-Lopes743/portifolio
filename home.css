@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'supermabroz';
+  src: url('SuperMabroz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+:root{
+    --purple: #a200ff;
+    --purple_black: #6900a7;
+    --green_scren: #11ee24;
+    --green_scren_black: #0b9e18;
+}
+header{
+    display: flex;
+    height: 20vh;
+    background-image: linear-gradient(60deg, var(--green_scren), var(--green_scren_black));
+    color: white;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.747);
+    padding: 10px 0px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:10px 5px 5px black;
+}
+header h1, header h2{
+    font-family: 'supermabroz', cursive;
+    margin: 20px;
+    text-align: left;
+}
+.icones {
+    display: flex;
+    flex-basis: 250px;
+    font-size: 3vh;
+    justify-content: space-evenly;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://lourescolor.com.br/wp-content/uploads/2024/11/concrete-textured-background.jpg');
+    background-size: cover; /* ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    position: relative;
+    z-index: 1;
+}
+main::before {
+  content: "";
+  background-color: var(--purple_black);
+  position: absolute;
+  inset: 0;
+  opacity: 0.9; /* ajuste a opacidade aqui */
+  z-index: -1;
+  pointer-events: none;
+}
