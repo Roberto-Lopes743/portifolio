@@ -14,6 +14,7 @@ body{
     height: 100vh;
     background-image: linear-gradient(45deg, var(--purple), var(--purple_black)), url('assents/tinta.png');
     background-size: cover; /* ajuste conforme necessário */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     overflow-x: hidden;
@@ -41,6 +42,9 @@ header h1, header h2{
     font-family: 'supermabroz', cursive;
     margin: 20px;
     text-align: left;
+}
+header h2{
+    font-size: 15px;
 }
 .icones {
     display: flex;
@@ -74,7 +78,7 @@ header h1, header h2{
     display: block;
     transform: rotate(-10deg);
     width: 20%;
-    margin-right: 2vw;
+    margin-right: 10vw;
     margin-top: 5%;
     transform: translate(-50%, -50%);
 }
@@ -95,7 +99,7 @@ header h1, header h2{
     display: block;
     transform: rotate(10deg);
     width: 20%;
-    margin-right: 6vw;
+    margin-right: 10vw;
     margin-top: 5%;
 }
 #figuras{
@@ -108,4 +112,29 @@ iframe{
     width: fit-content;
     height: fit-content;
     transform: scale(1  );
+}
+@media screen and (max-width: 700px) {
+    #line{
+        margin: auto;
+    }
+    #figuras{
+        align-items: center;
+        margin-top: 10vw;
+    }
+    #cmd, #acao{
+        margin: auto;
+        width: 30%;
+    }
+    .icones{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #apresentacao{
+        margin-top: 5vw;
+        flex-direction: column;
+        align-items: center;
+    }
 }
