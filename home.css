@@ -92,6 +92,13 @@ header h2{
     50% {transform: rotate(20deg) translateY(-20px);}
     100% {transform: rotate(10deg) translateY(0px);}
 }
+#more{
+    display: none;
+    font-size: 5vh;
+    color: white;
+    margin-right: 5vw;
+    cursor: pointer;
+}
 #acao{
     animation-name: move2;
     animation-duration: 3s;
@@ -119,7 +126,7 @@ iframe{
     }
     #figuras{
         align-items: center;
-        margin-top: 10vw;
+        margin-top: 10vh;
     }
     #cmd, #acao{
         margin: auto;
@@ -133,8 +140,18 @@ iframe{
         justify-content: center;
     }
     #apresentacao{
-        margin-top: 5vw;
+        margin-top: 5vh;
         flex-direction: column;
         align-items: center;
+    }
+    #more{
+        display: inline;
+        align-self: flex-end;
+    }
+    #nome h2, #nome h1{
+        text-align: center;
+    }
+    #line{
+        width: 80vw;
     }
 }
