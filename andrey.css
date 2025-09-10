@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'millares';
+  src: url('millares.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, red, red), url('assents/t2.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    overflow-x: hidden;
+
+}
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'millares', cursive;
+    font-weight: bolder;
+}
+#container_icones{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.fa-solid{
+    font-size: 50px;
+    text-shadow: 1px 1px 10px black;
+}
+#apresentacao{
+    position: relative;
+    height: 946px;
+    color: white;
+}
+#apresentacao h1{
+    width: fit-content;
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    font-size: 10vw;
+    transform: translate(-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#apresentacao img{
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+}
+#line{
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
